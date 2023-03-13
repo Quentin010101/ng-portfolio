@@ -1,0 +1,20 @@
+<ng-container *ngIf="side">
+  <div ngClass="container {{ side }}">
+    <div class="circle bg-color-p"></div>
+    <div class="content">
+      <h4>
+        <ng-content select="[title]"></ng-content>
+      </h4>
+      <h5>
+        <ng-content select="[city]"></ng-content>
+      </h5>
+      <h6>
+        <ng-content select="[date]"></ng-content>
+      </h6>
+    </div>
+    <div class="item">
+      <div class="line bg-color-p"></div>
+    </div>
+    <div class="empty"></div>
+  </div>
+</ng-container>

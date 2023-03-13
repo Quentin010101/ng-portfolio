@@ -1,0 +1,97 @@
+@import 'src/scss/color.scss';
+
+#acceuil
+{
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  .scroll{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 0.8rem;
+
+    svg{
+      fill: inherit;
+      animation: pulse 1s ease infinite alternate ;
+    }
+    @keyframes pulse {
+      0%{ opacity: 0.4};
+      100%{ opacity: 1};
+    }
+    
+
+
+  }
+
+  .grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5rem 0rem;
+
+    .title-container{
+      display: flex;
+      flex-direction: column;
+      gap: 0rem;
+
+      .button{
+        margin: 2rem 0;
+      }
+    }
+  }
+
+
+  p{
+    margin: 0;
+  }
+
+  .p1{
+    font-size: 50px;
+    font-weight: 900;
+    display: flex;
+    gap: 0.8rem;
+
+    svg{
+      transform: translateY(-10%) rotate(-10deg);
+      animation: shake alternate infinite 15s ease;
+      transform-origin: 50% 95%;
+    }
+
+    @keyframes shake {
+      30%{
+        transform: translateY(-10%) rotate(0deg);
+      }
+      32%{
+        transform: translateY(-10%) rotate(-40deg);
+      }
+      34%{
+        transform: translateY(-10%) rotate(0deg);
+      }
+      36%{
+        transform: translateY(-10%) rotate(-30deg);
+      }
+      38%{
+        transform: translateY(-10%) rotate(0deg);
+      }
+    }
+  }
+
+  .p2{
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .p3{
+    font-size: 20px;
+    font-weight: 800;
+    opacity: 0.9;
+  }
+
+  .hand{
+  }
+}

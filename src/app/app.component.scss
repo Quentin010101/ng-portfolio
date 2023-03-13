@@ -1,0 +1,21 @@
+:host
+{
+  display: flex;
+  justify-content: center;
+  max-width: 1700px;
+  padding: 0 1.5rem;
+  margin: auto;
+  .nav{
+    z-index: 1;
+    max-width: 1700px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .container{
+    position: relative;
+    width: 100%
+  }
+}

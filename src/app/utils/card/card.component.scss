@@ -1,0 +1,66 @@
+.container{
+  position: relative;
+  display: grid;
+  grid-template-columns: 10fr 1fr 10fr;
+  
+  .content{
+    padding-bottom: 2rem;
+    width: 100%;
+
+  }
+  &.left{
+    .content{
+      text-align: right;
+      order: 1;
+    }
+    .empty{
+      order: 3;
+    }
+  }
+  &.right{
+    .content{
+      order: 3;
+      text-align: left;
+    }
+    .empty{
+      order: 1;
+    }
+  }
+  .item{
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .line{
+    width: 2px;
+    height: 100%;
+  }
+
+  .circle{
+    position: absolute;
+    left: 50%;
+    width: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  h4{
+    font-size: 1.15em;
+    font-weight: 700;
+  }
+  h5{
+    font-size: 1.05em;
+    font-weight: 400;
+  }
+  h6{
+    font-size: 0.8em;
+    font-style: italic;
+    opacity: 0.8;
+    font-weight: 400;
+  }
+  h4, h5, h6{
+    margin: 0 0 1rem 0;
+  }
+}

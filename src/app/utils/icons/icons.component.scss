@@ -1,0 +1,32 @@
+
+
+
+.icon-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  a{
+    padding: 0.2rem;
+    svg{
+      stroke-width: 1.5;
+    }
+
+  }
+
+  .dialogue{
+    position: absolute;
+    top: -0.4rem;
+    left: 100%; 
+    z-index: 1;
+    width: 6rem;
+    margin: 0 1rem;
+    padding: 0.4rem;
+    border: solid 2px;
+    border-radius: 0.75rem;
+    opacity: 1;
+    font-size: 0.9em;
+    
+  }
+}
