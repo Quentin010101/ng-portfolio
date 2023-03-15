@@ -89,3 +89,22 @@
     gap: 0.5rem !important;
   }
 }
+@media (max-width: 700px){
+  .projet-container *{
+    font-size: 0.95em !important;
+  }
+  .content{
+    max-width: 350px  !important;
+  }
+  .image{
+    width: 350px  !important;
+  }
+}
+@media (max-width: 500px){
+  .content{
+    max-width: 280px  !important;
+  }
+  .image{
+    width: 280px  !important;
+  }
+}

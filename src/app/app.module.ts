@@ -10,6 +10,7 @@ import { RemoveSpacePipe } from './pipe/remove-space.pipe';
 import { CardComponent } from './utils/card/card.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { FooterComponent } from './footer/footer.component';
+import { UpComponent } from './up/up.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     CardComponent,
     ProjetsComponent,
     FooterComponent,
+    UpComponent,
   ],
   imports: [
     BrowserModule

@@ -83,6 +83,11 @@ li{
     stroke: $color-p;
   }
 }
+@media (max-width: 500px){
+  .button-xl{
+    padding: 0.5rem 1rem;
+  }
+}
 .button-sm{
   padding: 0.4rem 0.8rem;
   color: $color-t-d;
@@ -151,4 +156,29 @@ h3{
   opacity: 0.7;
   text-align: center;
   margin: 0rem 0 4rem 0;
+}
+.container-up{
+  background-color: $color-t-d-2;
+  border: solid 2px $color-t-2-o;
+  border-radius: 0.5rem;
+  height: 24px;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+.dark .container-up{
+  background-color: $color-t-2;
+  border: solid 2px $color-t-d-2-o;
+}
+@media (max-width: 700px){
+  h2{
+    font-size: 2em;
+  }
+  h3{
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 500px){
+  h2{
+    font-size: 1.8em;
+  }
 }

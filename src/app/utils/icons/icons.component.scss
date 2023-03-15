@@ -11,6 +11,8 @@
     padding: 0.2rem;
     svg{
       stroke-width: 1.5;
+      width: 24px;
+      height: 24px;
     }
 
   }
@@ -28,5 +30,20 @@
     opacity: 1;
     font-size: 0.9em;
     
+  }
+}
+
+@media (max-width: 700px){
+  a{
+    padding: 0.4rem !important;
+    svg{
+      stroke-width: 1.5;
+      width: 34px !important;
+      height: 34px !important;
+    }
+
+  }
+  .icon-container{
+    flex-direction: row;
   }
 }

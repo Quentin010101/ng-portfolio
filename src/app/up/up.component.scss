@@ -1,0 +1,15 @@
+
+:host{
+  position: sticky;
+  display: block;
+  bottom: 2rem;
+  left: 100%;
+  width: fit-content;
+}
+.container{
+  cursor: pointer;
+
+  svg{
+    fill: inherit;
+  }
+}
