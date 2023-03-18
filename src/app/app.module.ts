@@ -11,6 +11,7 @@ import { CardComponent } from './utils/card/card.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { FooterComponent } from './footer/footer.component';
 import { UpComponent } from './up/up.component';
+import { IntersectingDirective } from './directive/intersecting.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { UpComponent } from './up/up.component';
     ProjetsComponent,
     FooterComponent,
     UpComponent,
+    IntersectingDirective,
   ],
   imports: [
     BrowserModule

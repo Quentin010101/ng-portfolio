@@ -2,22 +2,22 @@
   <h2>A propos</h2>
   <h3>Education</h3>
   <div class="education">
-    <app-card [side]="'left'">
+    <app-card [side]="'left'" appIntersecting [delay]="300" [translationY]="100">
       <span title>Baccalaureat S</span>
       <span city>Lycée Valabre Gardanne</span>
       <span date>2007-2008</span>
     </app-card>
-    <app-card [side]="'right'">
+    <app-card [side]="'right'" appIntersecting [delay]="300" [translationY]="100">
       <span title>Licence Physique Chimie</span>
       <span city>Université St Jérôme Marseille</span>
       <span date>2009-2011</span>
     </app-card>
-    <app-card [side]="'left'">
+    <app-card [side]="'left'" appIntersecting [delay]="300" [translationY]="100">
       <span title>Formation Développeur Web, Web Mobile</span>
       <span city>Afpa St Jérôme Marseille</span>
       <span date>2021-2022</span>
     </app-card>
-    <app-card [side]="'right'">
+    <app-card [side]="'right'" appIntersecting [delay]="300" [translationY]="100">
       <span title>Formation Concepteur Développeur Java</span>
       <span city>IForm Aix-en-Provence</span>
       <span date>2022-2023</span>
@@ -38,7 +38,7 @@
       </h4>
       <ul>
         <ng-container *ngFor="let item of frontItems">
-          <li><div class="bg-color-p"></div>{{ item }}</li>
+          <li appIntersecting [translationX]="-50"><div class="bg-color-p"></div>{{ item }}</li>
         </ng-container>
       </ul>
     </div>
@@ -55,7 +55,7 @@
       </h4>
       <ul>
         <ng-container *ngFor="let item of backItems">
-          <li><div class="bg-color-p"></div>{{ item }}</li>
+          <li appIntersecting [translationX]="50"><div class="bg-color-p"></div>{{ item }}</li>
         </ng-container>
       </ul>
     </div>
